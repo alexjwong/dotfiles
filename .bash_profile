@@ -14,10 +14,6 @@ GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM="auto"
 PROMPT_COMMAND+="; __git_ps1 '\t \w' '\\\$ '"
 
-# hub aliased as git
-# github.com/github/hub
-eval "$(hub alias -s)"
-
 # bash_completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
