@@ -18,3 +18,8 @@ PROMPT_COMMAND+="; __git_ps1 '\t \w' '\\\$ '"
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
+
+# golang
+export GOPATH=~/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
