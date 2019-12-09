@@ -1,4 +1,18 @@
 
+# Completions
+
+# enable the default zsh completions!
+autoload -Uz compinit && compinit
+# git completions
+#   to setup:
+#   make the `.zsh` directory
+    # mkdir -p ~/.zsh
+#   download the scripts for completion
+    # curl -o ~/.zsh/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+    # curl -o ~/.zsh/_git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
+
 # Color context
 export CLICOLOR=1
 
