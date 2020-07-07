@@ -30,7 +30,7 @@ source ~/.git-prompt.sh
 # example given by git-prompt.sh:
 # precmd () { __git_ps1 "%n" ":%~$ " "|%s" }
 
-precmd () { __git_ps1 "%*:%~" " %# " }
+precmd () { __git_ps1 "%D{%FT%T%z} %~" " %# " }
 
 # golang
 export GOPATH=~/go
