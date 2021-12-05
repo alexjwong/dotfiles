@@ -17,6 +17,7 @@ fpath=(~/.zsh $fpath)
 export CLICOLOR=1
 
 # git prompt
+    # curl -o curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWCOLORHINTS=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
