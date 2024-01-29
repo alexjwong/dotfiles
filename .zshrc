@@ -17,7 +17,7 @@ fpath=(~/.zsh $fpath)
 export CLICOLOR=1
 
 # git prompt
-    # curl -o curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+    # curl -o  ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWCOLORHINTS=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
@@ -38,3 +38,10 @@ export GOPATH=~/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
+# GoLand
+# uncomment if GoLand is installed
+export PATH="$PATH:/Applications/GoLand.app/Content/MacOS"
+
+# kubectl autocomplete
+# uncomment if using kubectl
+# source <(kubectl completion zsh)
